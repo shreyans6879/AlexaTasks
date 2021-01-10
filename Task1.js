@@ -48,11 +48,14 @@ function del()
     let arr = [];
 
     rl.question("Name of entry to be deleted:", (nm) => {
-        for(let i=0 ; i < reg.length; i++) {
-            if(reg[i].name != nm) {
+        for(let i=0 ; i < reg.length; i++)
+        {
+            if(reg[i].name != nm) 
+            {
                 arr.push(reg[i]);
             }
-            else{
+            else
+            {
                 arr.splice(i,1);
             }
         }
